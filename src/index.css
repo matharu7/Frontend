@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  margin: 0;
+  background-image: url("https://i.pinimg.com/originals/ac/54/a1/ac54a128942c750799c2c1fe144d2467.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+.todo-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+.todo-form input {
+  padding: 0.5rem;
+  width: 70%;
+}
+
+.todo-form button {
+  padding: 0.5rem;
+  margin-left: 10px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+
+
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.add-input {
+  flex: 1;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.add-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.add-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+}
+
+
+
+.todo-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+}
