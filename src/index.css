@@ -1,3 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://i.pinimg.com/originals/ac/54/a1/ac54a128942c750799c2c1fe144d2467.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* Main container */
+.todo-container {
+  max-width: 600px;
+  margin: 80px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
 /* Dark mode */
 .todo-container.dark {
   background: rgba(0, 0, 0, 0.85);
@@ -8,17 +30,54 @@
   color: white;
 }
 
-/* Button style */
-button {
-  padding: 8px 15px;
-  margin-bottom: 15px;
-  border: none;
-  border-radius: 8px;
-  background-color: #444;
+/* Form */
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.add-input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 30px;
+  border: 2px solid #ccc;
+}
+
+.add-btn {
+  padding: 12px 20px;
+  border-radius: 30px;
+  background-color: #28a745;
   color: white;
+  border: none;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #222;
+.add-btn:hover {
+  background-color: #218838;
+}
+
+/* Todo item */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.todo-text {
+  font-size: 18px;
 }
