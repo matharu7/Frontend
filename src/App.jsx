@@ -3,6 +3,7 @@ import axios from "axios";
 import TodoForm from "./components/TodoForm";
 import TodoItem from "./components/TodoItem";
 import "./index.css";
+import "./App.css";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -30,12 +31,10 @@ function App() {
     setTodos(todos.filter((t) => t._id !== id));
 
   return (
-    <div className={dark ? "todo-container dark" : "todo-container"}>
+    <div className={dark ? "todo-container dark container" : "todo-container container"}>
       
-      {/* 🔥 CI/CD Test Text */}
       <h2>New Version Deployed 🚀</h2>
 
-      {/* 🌙 Theme Toggle */}
       <button onClick={() => setDark(!dark)}>
         Toggle Theme
       </button>
