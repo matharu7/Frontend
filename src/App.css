@@ -1,42 +1,23 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: url('https://assets.webamboos.com/9_1_622da4ecde.png') no-repeat center center fixed;
-  background-size: cover;
-}
+/* NO body styling here */
 
 .container {
   max-width: 600px;
-  margin: 60px auto;
-  background: rgba(255, 255, 255, 0.9);
+  margin: 80px auto;
+  background: rgba(255, 255, 255, 0.95);
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
+h1, h2 {
   text-align: center;
-  color: #333;
-  margin-bottom: 1.5rem;
+  color: #222;
+  margin-bottom: 1rem;
 }
 
-.input-group {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.input-group input {
-  flex: 1;
-  padding: 10px;
-  font-size: 1.1rem;
-  border: 2px solid #aaa;
-  border-radius: 8px;
-}
-
-.input-group button {
+button {
   padding: 10px 15px;
+  margin-bottom: 15px;
   background-color: #007bff;
   color: white;
   font-weight: bold;
@@ -45,26 +26,6 @@ h1 {
   cursor: pointer;
 }
 
-.todo-list {
-  list-style: none;
-  padding: 0;
-}
-
-.todo-list li {
-  display: flex;
-  justify-content: space-between;
-  background: #f1f1f1;
-  padding: 10px;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-}
-
-.todo-list button {
-  background-color: crimson;
-  color: white;
-  border: none;
-  padding: 6px 10px;
-  border-radius: 6px;
-  cursor: pointer;
+button:hover {
+  background-color: #0056b3;
 }
